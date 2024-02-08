@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/65c49896cbc79098c0e59b0b
+
+
+###
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name": "Valluri Srinivas",
+    "subscriberToChannel": "Mr Beast"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/65c49896cbc79098c0e59b0b
+###
+
+PATCH http://localhost:3000/subscribers/65c49896cbc79098c0e59b0b
+Content-Type: application/json
+
+{
+    "name": "Valluri"
+}
